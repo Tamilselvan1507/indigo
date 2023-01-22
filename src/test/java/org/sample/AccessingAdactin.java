@@ -15,6 +15,7 @@ public class AccessingAdactin extends Baseclass {
 		geturl("https://adactinhotelapp.com/index.php");
 		maximizewindow();
 	}
+	
 	@Before
 	private void before() {
 		long starttime = System.currentTimeMillis();
@@ -26,7 +27,14 @@ public class AccessingAdactin extends Baseclass {
 	}
 	@Test
 	private void test() {
-		
-	}
+			}
+	@Test
+	private void test2() {
+		// TODO Auto-generated method stub
 
+	}
+	@AfterClass
+	private void AfterClass() {
+		closeacurrentwindow();
+}
 }
